@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Martial TCHOKPON - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ======== BARRE DE NAVIGATION ======== -->
+    <nav>
+        <div class="logo">Martial T.</div>
+        <ul>
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#a-propos">À propos</a></li>
+            <li><a href="#projets">Projets</a></li>
+            <li><a href="#competences">Compétences</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- ======== SECTION HÉROS ======== -->
+    <header id="accueil" class="hero">
+        <div class="hero-text">
+            <h1>Je suis Martial, Data Analyst & Développeur</h1>
+            <p>Passionné par la transformation de données en solutions concrètes.</p>
+            <a href="#projets" class="btn">Voir mes projets</a>
+        </div>
+        <div class="hero-image">
+            <img src="images/hero-illustration.jpeg" alt="Illustration code">
+        </div>
+    </header>
+
+    <main>
+        <!-- ======== SECTION À PROPOS ======== -->
+        <section id="a-propos" class="about">
+            <h2>À propos de moi</h2>
+            <div class="about-content">
+                <img src="images/profile.png" alt="Photo de Martial" class="profile-pic">
+                <div>
+                    <p>Étudiant en Statistique Appliquée avec une passion pour le développement et la data science. Je transforme des problèmes complexes en solutions claires et interactives.</p>
+                    <p>Ma double compétence en statistiques et en développement me permet de construire des projets de A à Z, de la collecte de données au déploiement d'applications.</p>
+                    <a href="CV-Martial-TCHOKPON.pdf" class="btn" download>Télécharger mon CV</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======== SECTION PROJETS ======== -->
+        <section id="projets" class="projects">
+            <h2>Mes Projets</h2>
+            <div class="project-grid">
+                <!-- Projet 1 -->
+                <div class="project-card">
+                    <h3>Pipeline de Données Climatiques</h3>
+                    <p>Pipeline ETL orchestré avec Airflow & Docker pour prédire les risques climatiques pour l'agriculture.</p>
+                    <div class="tags">#DataEngineering #Airflow #Docker #ML</div>
+                    <a href="https://github.com/manfoya/AgriClimat-Predict" target="_blank" class="btn-project">Voir sur GitHub</a>
+                </div>
+                <!-- Projet 2 -->
+                <div class="project-card">
+                    <h3>Dashboard de Ventes Interactif</h3>
+                    <p>Application web live construite avec Streamlit pour visualiser et filtrer des données de ventes complexes.</p>
+                    <div class="tags">#Dashboard #Streamlit #Python #DataViz</div>
+                    <a href="https://interactive-sales-dashboard.streamlit.app/" target="_blank" class="btn-project">Voir la Démo Live</a>
+                </div>
+                <!-- Projet 3 -->
+                <div class="project-card">
+                    <h3>Détection de Fraude (Analyse & NLP)</h3>
+                    <p>Étude de cas complète pour détecter les offres d'emploi frauduleuses en utilisant l'analyse de texte.</p>
+                    <div class="tags">#DataAnalysis #NLP #Python #Risk</div>
+                    <a href="https://github.com/manfoya/Fake-Job-Posting-Detection-Analysis" target="_blank" class="btn-project">Voir sur GitHub</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======== SECTION COMPÉTENCES ======== -->
+        <section id="competences" class="skills">
+            <h2>Mes Compétences</h2>
+            <div class="skills-content">
+                <div class="skill-category">
+                    <h3>Hard Skills (Data & Dev)</h3>
+                    <p>Python (Pandas, Scikit-learn)</p>
+                    <div class="skill-bar"><div class="skill-level" style="width: 90%;"></div></div>
+                    <p>SQL & Bases de Données</p>
+                    <div class="skill-bar"><div class="skill-level" style="width: 80%;"></div></div>
+                    <p>Data Engineering (Airflow, Docker)</p>
+                    <div class="skill-bar"><div class="skill-level" style="width: 75%;"></div></div>
+                    <p>HTML, CSS, JavaScript</p>
+                    <div class="skill-bar"><div class="skill-level" style="width: 85%;"></div></div>
+                </div>
+                <div class="skill-category">
+                    <h3>Soft Skills</h3>
+                    <p>Gestion de projet</p>
+                    <div class="skill-bar"><div class="skill-level" style="width: 95%;"></div></div>
+                    <p>Résolution de problème</p>
+                    <div class="skill-bar"><div class="skill-level" style="width: 95%;"></div></div>
+                    <p>Adaptabilité</p>
+                    <div class="skill-bar"><div class="skill-level" style="width: 90%;"></div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======== SECTION CONTACT ======== -->
+        <section id="contact" class="contact">
+            <h2>Vous avez un projet en tête ?</h2>
+            <p>N'hésitez pas à me contacter</p>
+            <form id="contact-form">
+                <input type="text" id="nom" placeholder="Votre nom" required>
+                <input type="email" id="email" placeholder="Votre email" required>
+                <textarea id="message" placeholder="Votre message" rows="5" required></textarea>
+                <button type="submit" class="btn">Envoyer</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- ======== PIED DE PAGE ======== -->
+    <footer>
+        <p>Designed by Martial TCHOKPON with HTML CSS JS - Tous droits réservés 2025</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

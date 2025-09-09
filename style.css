@@ -1,0 +1,212 @@
+/* --- Styles Généraux --- */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+html {
+    scroll-behavior: smooth;
+}
+section {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    color: #008080;
+}
+
+/* --- Barre de Navigation --- */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%; /* Utilise des pourcentages */
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 90%; /* Ajusté pour le padding */
+    top: 0;
+    left: 0; /* Assure que la nav est bien calée */
+    right: 0; /* Assure que la nav est bien calée */
+    z-index: 1000;
+}
+nav .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #008080;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+nav ul li a:hover {
+    color: #008080;
+}
+
+/* --- Section Héros (Corrigée) --- */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 5%;
+    background-color: #e0f7fa;
+    margin-top: 70px; /* Espace pour la nav fixe */
+    gap: 40px; 
+}
+.hero-text {
+    flex: 1.2; /* Donne un peu plus d'espace au texte */
+}
+.hero-text h1 {
+    font-size: 3em;
+    color: #005a5a;
+}
+.hero-text p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+.hero-image {
+    flex: 1;
+    text-align: right;
+}
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* --- Boutons --- */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #008080;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+.btn:hover {
+    background-color: #005a5a;
+}
+
+/* --- Section À Propos --- */
+.about {
+    background-color: #fff;
+}
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #e0f7fa;
+}
+
+/* --- Section Projets --- */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+.project-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.project-card h3 {
+    color: #005a5a;
+}
+.project-card .tags {
+    margin: 15px 0;
+    color: #666;
+    font-style: italic;
+    font-size: 0.9em;
+}
+.btn-project {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #008080;
+    color: #008080;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s;
+    margin-top: auto; /* Pousse le bouton en bas */
+}
+.btn-project:hover {
+    background-color: #008080;
+    color: #fff;
+}
+
+/* --- Section Compétences --- */
+.skills {
+    background-color: #fff;
+}
+.skills-content {
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+    flex-wrap: wrap; /* Pour les petits écrans */
+}
+.skill-category {
+    width: 45%;
+    min-width: 300px; /* Pour éviter que ce soit trop écrasé */
+}
+.skill-bar {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 5px;
+    margin: 10px 0 20px 0;
+}
+.skill-level {
+    height: 10px;
+    background-color: #008080;
+    border-radius: 5px;
+}
+
+/* --- Section Contact --- */
+.contact {
+    text-align: center;
+}
+.contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.contact input, .contact textarea {
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+/* --- Pied de Page --- */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
